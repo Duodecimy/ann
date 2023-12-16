@@ -2,6 +2,7 @@
 # 忽略IDE的配置文件
 .idea/
 .vscode/
+/__pycache__
 
 # 忽略过大的文件
 /mnist_dataset/mnist_train.csv

@@ -141,14 +141,14 @@ def test(nn, test_filepath):
   print("正确率为：%.2f%%" % (sum(scorecard_array) / len(scorecard_array) * 100) )
 
   # 使用自制的图片进行测试
-  our_own_dataset = load_images.getOurOwnDataset()
-  for record in our_own_dataset:
-    lable_correct = record.label
+  # our_own_dataset = load_images.getOurOwnDataset()
+  # for record in our_own_dataset:
+  #   lable_correct = record.label
 
-    outputs = nn.query(record.img_data)
-    lable = np.argmax(outputs)
+  #   outputs = nn.query(record.img_data)
+  #   lable = np.argmax(outputs)
 
-    print("小nn把%d认成了%d" % (lable, lable_correct) )
+  #   print("小nn把%d认成了%d" % (lable, lable_correct) )
   
   pass
 
